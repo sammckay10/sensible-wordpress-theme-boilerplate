@@ -1,0 +1,33 @@
+{
+  "name": "sensible-wordpress-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "An opinionated WordPress theme boilerplate using best practices. Designed to get things done quickly ✅",
+  "scripts": {
+    "parcel-dev": "parcel watch ./js/app.js ./scss/app.scss --public-url ./",
+    "parcel-prod": "parcel build ./js/app.js ./scss/app.scss --public-url ./",
+    "browser-sync-server": "browser-sync start --proxy $(grep DEV_URL .env | cut -d '=' -f2) --files \"**/*.php\" \"dist/js/app.js\" \"dist/scss/app.css\"",
+    "start": "concurrently --kill-others \"npm run parcel-dev\" \"npm run browser-sync-server\"",
+    "build": "npm run parcel-prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate.git"
+  },
+  "author": "Sam McKay",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate/issues"
+  },
+  "homepage": "https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate",
+  "dependencies": {
+    "blazy": "^1.8.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.0.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.0"
+  }
+}
