@@ -12,6 +12,7 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 function addThemeSupports()
 {
     add_theme_support('title-tag');
+    add_theme_support('woocommerce');
     add_theme_support('post-thumbnails');
 }
 
