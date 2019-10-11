@@ -35,7 +35,7 @@ function enqueueFrontEndAssets()
 {
     wp_enqueue_style(
         'app',
-        get_template_directory_uri() . '/dist/scss/app.css',
+        get_template_directory_uri() . '/dist/app.css',
         null,
         null,
         null
@@ -43,7 +43,7 @@ function enqueueFrontEndAssets()
 
     wp_enqueue_script(
         'app',
-        get_template_directory_uri() . '/dist/js/app.js',
+        get_template_directory_uri() . '/dist/app.js',
         null,
         null,
         true

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "An opinionated WordPress theme boilerplate using best practices. Designed to get things done quickly ✅",
   "scripts": {
-    "parcel-dev": "parcel watch ./js/app.js ./scss/app.scss --public-url ./",
-    "parcel-prod": "parcel build ./js/app.js ./scss/app.scss --public-url ./",
+    "parcel-dev": "parcel watch ./js/app.js --public-url ./",
+    "parcel-prod": "parcel build ./js/app.js --public-url ./",
     "browser-sync-server": "browser-sync start --proxy $(grep DEV_URL .env | cut -d '=' -f2) --files \"**/*.php\" \"dist/js/app.js\" \"dist/scss/app.css\"",
     "start": "concurrently --kill-others \"npm run parcel-dev\" \"npm run browser-sync-server\"",
     "build": "npm run parcel-prod"
