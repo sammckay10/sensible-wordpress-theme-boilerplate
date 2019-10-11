@@ -15,6 +15,15 @@ function addThemeSupports()
     add_theme_support('post-thumbnails');
 }
 
+// Automatically add header and footer to each template
+add_filter('template_include', function ($template) {
+    get_header();
+    include $template;
+    get_footer();
+
+    return false;
+});
+
 // Register navigation menus
 register_nav_menus([
     'primary' => __('Primary Navigation'),
