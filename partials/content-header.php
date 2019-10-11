@@ -1,6 +1,6 @@
-<header>
+<header class="header">
     <div class="container">
-        <p>partials/content-header.php</p>
+        <pre>partials/content-header.php</pre>
 
         <?php wp_nav_menu([
             'theme_location' => 'primary',

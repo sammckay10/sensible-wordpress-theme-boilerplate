@@ -1,6 +1,6 @@
-<footer>
+<footer class="footer">
     <div class="container">
-        partials/content-footer.php
+        <pre>partials/content-footer.php</pre>
 
         <?php wp_nav_menu([
             'theme_location' => 'secondary',
