@@ -11,22 +11,23 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 - Sass - https://sass-lang.com/
 - Normalize.css CSS reset - https://necolas.github.io/normalize.css/
 - CSS vendor auto-prefixing using PostCSS - https://github.com/postcss/autoprefixer
+- Automatically include header.php and footer.php - https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19
 
 ### Installation:
 
-1.  Clone the repository into your theme directory (usually /wp-content/themes/)
+Clone the repository into your theme directory (usually /wp-content/themes/)
 
-        git clone https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate desired-name-for-new-theme
+    git clone https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate desired-name-for-new-theme
 
-2.  Install dependencies with NPM or Yarn (in theme folder)
+Install dependencies with NPM or Yarn (in theme folder)
 
-        yarn || npm install
+    yarn || npm install
 
-3.  Copy .env.example to .env and change DEV_URL to the correct address for your development site
+Copy .env.example to .env and change DEV_URL to the correct address for your development site
 
-        DEV_URL=http://example.com
+    DEV_URL=http://example.com
 
-4.  Run the build script (in theme folder)
+Run the build script (in theme folder)
 
-        yarn start // for development server
-        yarn build // for production build
+    yarn start // for development server
+    yarn build // for production build
