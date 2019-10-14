@@ -1,17 +1,19 @@
 # A Sensible WordPress Theme Boilerplate
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 An opinionated WordPress theme boilerplate using best practices. Designed to get things done quickly ✅
 
 ### Features:
 
-- [Cache-busting file hashing for JS & CSS](https://www.gatsbycentral.com/what-is-cache-busting-or-content-hashing)
+- [Cache-busting content hashing for JS & CSS](https://www.gatsbycentral.com/what-is-cache-busting-or-content-hashing)
 - [ES6 JavaScript using Babel](https://babeljs.io/)
 - [Browsersync dev server](https://www.browsersync.io/)
 - [Webpack](https://webpack.js.org)
 - [Sass](https://sass-lang.com/)
 - [Normalize.css CSS reset](https://necolas.github.io/normalize.css/)
 - [CSS vendor auto-prefixing using PostCSS](https://github.com/postcss/autoprefixer)
-- [Automatically include header.php and footer.php](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
+- [Automatically includes header.php and footer.php in each template](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
 
 ### Installation:
 
