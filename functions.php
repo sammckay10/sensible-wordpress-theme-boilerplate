@@ -34,9 +34,13 @@ register_nav_menus([
 // Enqueue front end scripts & styles
 function enqueueFrontEndAssets()
 {
+    $assetPaths = json_decode(
+        file_get_contents(get_template_directory() . "/dist/hashed-assets.json")
+    );
+
     wp_enqueue_style(
         'app',
-        get_template_directory_uri() . '/dist/app.css',
+        get_template_directory_uri() . '/dist/' . $assetPaths->main->css,
         null,
         null,
         null
@@ -44,7 +48,7 @@ function enqueueFrontEndAssets()
 
     wp_enqueue_script(
         'app',
-        get_template_directory_uri() . '/dist/app.js',
+        get_template_directory_uri() . '/dist/' . $assetPaths->main->js,
         null,
         null,
         true
