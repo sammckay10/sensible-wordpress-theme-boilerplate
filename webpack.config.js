@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
-        use: ["file-loader"]
+        use: ["file-loader", "image-webpack-loader"]
       }
     ]
   },
@@ -48,7 +48,8 @@ module.exports = {
       filename: "app.[contenthash].css"
     }),
     new BrowserSyncPlugin({
-      proxy: process.env.DEV_URL
+      proxy: process.env.DEV_URL,
+      files: ["./dist/hashed-assets.json", "**/**.php", "./img/**"]
     })
   ]
 };
