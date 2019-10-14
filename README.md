@@ -4,13 +4,13 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 
 ### Features:
 
-- Cache busting file hashing for JS & CSS
+- Cache-busting file hashing for JS & CSS
 - ES6 JavaScript using Babel - https://babeljs.io/
 - Browsersync dev server - https://www.browsersync.io/
 - Webpack - https://webpack.js.org
 - Sass - https://sass-lang.com/
 - Normalize.css CSS reset - https://necolas.github.io/normalize.css/
-- CSS vendor auto-prefixing using PostCSS - https://postcss.org/
+- CSS vendor auto-prefixing using PostCSS - https://github.com/postcss/autoprefixer
 
 ### Installation:
 
@@ -28,5 +28,5 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 
 4.  Run the build script (in theme folder)
 
-        yarn start // development server/file watcher
-        yarn build // production build
+        yarn start // for development server
+        yarn build // for production build
