@@ -6,14 +6,15 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 
 ### Features:
 
-- [Cache-busting content hashing for JS & CSS](https://www.gatsbycentral.com/what-is-cache-busting-or-content-hashing)
+- [Cache-busting content hashing for JS & CSS](https://webpack.js.org/guides/caching/)
+- [Script Deferring](https://www.w3schools.com/tags/att_script_defer.asp)
 - [ES6 JavaScript using Babel](https://babeljs.io/)
 - [Browsersync dev server](https://www.browsersync.io/)
 - [Webpack](https://webpack.js.org)
 - [Sass](https://sass-lang.com/)
 - [Normalize.css CSS reset](https://necolas.github.io/normalize.css/)
 - [CSS vendor auto-prefixing using PostCSS](https://github.com/postcss/autoprefixer)
-- [Automatically includes header.php & footer.php in each template](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
+- [Automatic inclusion of header.php & footer.php in each template](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
 - [Image, background-image & iframe lazy-loading with bLazy](http://dinbror.dk/blog/blazy/)
 
 ### Installation:
