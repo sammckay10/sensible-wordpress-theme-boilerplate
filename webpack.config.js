@@ -1,3 +1,5 @@
+// See https://webpack.js.org/ for documentation
+
 require("dotenv").config();
 
 const path = require("path");
