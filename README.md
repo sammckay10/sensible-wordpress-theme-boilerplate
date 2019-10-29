@@ -21,7 +21,7 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 
 Clone the repository into your theme directory (usually /wp-content/themes/) with a name of your choice
 
-    git clone https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate desired-name-for-your-new-theme
+    git clone https://github.com/sammckay10/sensible-wordpress-theme-boilerplate desired-name-for-your-new-theme
 
 Install dependencies with Yarn or NPM (in new theme folder)
 
