@@ -1,17 +1,21 @@
 <?php
 
 /**
+ * Define get_template_directory_uri as a constant to clean up templates
+ */
+define('THEME_URI', get_template_directory_uri());
+
+/**
+ * Define is_woocommerce as a constant to clean up templates
+ */
+define('WC_ACTIVE', function_exists('is_woocommerce'));
+
+/**
  * Get our hashed asset paths
  */
 $assetPaths = json_decode(
     file_get_contents(get_template_directory() . "/dist/hashed-assets.json")
 );
-
-/**
- * Remove unnecessary scripts & styles
- */
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_print_styles', 'print_emoji_styles');
 
 /**
  * Tell WordPress which features our theme supports
@@ -48,8 +52,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style(
         'app',
         get_template_directory_uri() .
-            '/dist/' .
-            $GLOBALS['assetPaths']->main->css,
+        '/dist/' .
+        $GLOBALS['assetPaths']->main->css,
         null,
         null,
         null
@@ -58,8 +62,8 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script(
         'app',
         get_template_directory_uri() .
-            '/dist/' .
-            $GLOBALS['assetPaths']->main->js,
+        '/dist/' .
+        $GLOBALS['assetPaths']->main->js,
         null,
         null,
         false // Set to false because we're deferring
