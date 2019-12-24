@@ -1,14 +1,18 @@
+# Ignore IDE files
+~*
+*.swo
+*.swp
 .idea
 .vscode
-~*
-*.DS_Store
 
-node_modules
-
+# Ignore build folders/files
 dist
 .env
 .cache
-
 yarn.lock
+node_modules
 yarn-error.log
 package-lock.json
+
+# Ignore OS files
+*.DS_Store
