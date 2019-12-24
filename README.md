@@ -10,8 +10,8 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 - [Browsersync dev server](https://www.browsersync.io/)
 - [Webpack](https://webpack.js.org)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [CSS vendor auto-prefixing using PostCSS](https://github.com/postcss/autoprefixer)
-- [PurgeCSS for removing unused utility classes](https://www.purgecss.com/)
+- [CSS Autoprefixer](https://github.com/postcss/autoprefixer)
+- [PurgeCSS](https://www.purgecss.com/)
 - [Automatic inclusion of header.php & footer.php in each template](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
 - [Image, background-image & iframe lazy-loading with bLazy](http://dinbror.dk/blog/blazy/)
 
