@@ -12,6 +12,7 @@ An opinionated WordPress theme boilerplate using best practices. Designed to get
 - [Tailwind CSS](https://tailwindcss.com/)
 - [CSS Autoprefixer](https://github.com/postcss/autoprefixer)
 - [PurgeCSS](https://www.purgecss.com/)
+- [PostCSS Nesting](https://github.com/postcss/postcss-nested)
 - [Automatic inclusion of header.php & footer.php in each template](https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/blob/master/functions.php#L19)
 - [Image, background-image & iframe lazy-loading with bLazy](http://dinbror.dk/blog/blazy/)
 
