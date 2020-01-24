@@ -8,6 +8,7 @@ module.exports = {
     require("tailwindcss"),
     require("postcss-import"),
     require("autoprefixer"),
+    require("postcss-nested"),
     require("cssnano")({ preset: "default" }),
     ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
   ]
