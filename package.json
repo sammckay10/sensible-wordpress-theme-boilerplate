@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate.git"
+    "url": "git+https://github.com/sammckay10/sensible-wordpress-theme-boilerplate"
   },
   "author": "Sam McKay",
   "license": "GPL-2.0-only",
   "bugs": {
-    "url": "https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate/issues"
+    "url": "https://github.com/sammckay10/sensible-wordpress-theme-boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/sammckay10/sensible-wordpress-theme-boilerplate",
+  "homepage": "https://github.com/sammckay10/sensible-wordpress-theme-boilerplate",
   "dependencies": {
     "blazy": "^1.8.2",
     "tailwindcss": "^1.1.4"
