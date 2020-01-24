@@ -46,7 +46,12 @@ module.exports = {
     }),
     new BrowserSyncPlugin({
       proxy: process.env.DEV_URL,
-      files: ["./dist/hashed-assets.json", "**/**.php", "./img/**"]
+      files: [
+        "./dist/hashed-assets.json",
+        "**/**.php",
+        "./img/**",
+        "./tailwind.config.js"
+      ]
     })
   ]
 };
